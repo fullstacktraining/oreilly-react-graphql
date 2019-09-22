@@ -61,14 +61,13 @@ ReactDOM.render(
   <ApolloProvider client={client}>
     <Query query={ERROR_QUERY}>
       {({ data }) => {
-        console.log(data);
+        // console.log(data);
         return (data && data.error) ?
         <React.Fragment>
           <Error message={data.error} />
           <App />
         </React.Fragment> : 
           <App />;
-        // return  <App />;
       }}
     </Query>
   </ApolloProvider>

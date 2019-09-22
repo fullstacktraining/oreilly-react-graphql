@@ -1,9 +1,11 @@
 const resolvers = {
   Query: {
     cars: (parent, args, { models }) => {
+      // SELECT * FROM cars;
       return models.Car.findAll();
     },
     car: (parent, { id }, { models }) => {
+      // SELECT * FROM cars WHERE id = `id`;
       return models.Car.findByPk(id);
     }
   },
@@ -32,6 +34,8 @@ const resolvers = {
   },
   Car: {
     owner: (parent, args, { models }) => {
+      console.log(parent);
+      // SELECT * FROM users WHERE id = `parent.userId`;
       return models.User.findByPk(parent.userId);
     }
   }

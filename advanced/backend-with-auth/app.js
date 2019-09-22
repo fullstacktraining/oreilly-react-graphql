@@ -31,7 +31,8 @@ const server = new ApolloServer({
     models,
     secret: process.env.JWT_SECRET,
     me: getLoggedInUser(req)
-  })
+  }),
+  playground: true
 });
 server.applyMiddleware({ app });
 

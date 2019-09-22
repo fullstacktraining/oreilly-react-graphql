@@ -25,7 +25,7 @@ class Profile extends Component {
 
   USER_QUERY = gql`{
     user(id: ${this.props.session.me.id}) {
-      photo(options:"200,200,face,max")
+      photo(options:"150,150,face,50")
     }
   }`
 
