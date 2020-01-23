@@ -2,8 +2,14 @@ const { gql } = require('apollo-server');
 
 const typeDefs = gql`
 type Query {
-  cars(pageSize: Int, after: String): CarConnection! 
+  cars(pageSize: Int, after: String): CarConnection!
   car(id: ID!): Car
+}
+
+type CarConnection {
+  cursor: String!
+  hasMore: Boolean!
+  cars: [Car]!
 }
 
 type Car {
@@ -14,12 +20,6 @@ type Car {
   colour: String
   speed: Int
 }
-
-type CarConnection {
-  cursor: String!
-  hasMore: Boolean!
-  cars: [Car]!
-}
 `
 
 module.exports = typeDefs;
@@ -28,7 +28,13 @@ module.exports = typeDefs;
 // cars: [Car]
 
 
+// type CarConnection {
+//   cursor: String!
+//   hasMore: Boolean!
+//   cars: [Car]!
+// }
 
 
 
+// cars(pageSize: Int, after: String): CarConnection! 
 //cars(pageSize: Int, after: String): CarConnection! 

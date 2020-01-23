@@ -8,7 +8,7 @@ const query = gql`
     id
     name
     username
-    photo(options:"200,true,true,face")
+    photo(options:"350,350,face,50")
     car {
       id
       make

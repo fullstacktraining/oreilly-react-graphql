@@ -37,6 +37,7 @@ const resolvers = {
         username,
         password
       };
+      // INSERT INTO User VALUES (`name`, `username`, `password`)
       const registeredUser = await models.User.create(user);
       try {
         if (typeof registeredUser.id === 'number') {

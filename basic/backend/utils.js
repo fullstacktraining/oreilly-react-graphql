@@ -1,6 +1,3 @@
-const SQL = require('sequelize');
-const bcrypt = require('bcrypt');
-
 module.exports.paginateResults = ({
   after: cursor,
   pageSize = 20,

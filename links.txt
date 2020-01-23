@@ -1,0 +1,23 @@
+React & GraphQL at Stripe
+https://www.slideshare.net/sashko1/react-and-graphql-at-stripe
+
+(A very gentle) Introduction to GraphQL
+https://blog.fullstacktraining.com/introduction-to-graphql/
+
+Manage images via GraphQL
+https://blog.fullstacktraining.com/image-management-via-graphql/
+
+Gatsby and GraphQL
+https://www.gatsbyjs.org/docs/graphql/
+
+Apollo GraphQL’s website
+https://www.apollographql.com
+
+Link to the material on GitHub
+https://github.com/fullstacktraining/oreilly-react-graphql
+
+GraphQL Course
+https://courses.fullstacktraining.com/courses/practical-graphql-become-a-graphql-ninja
+
+GraphQL Spec
+https://graphql.org
